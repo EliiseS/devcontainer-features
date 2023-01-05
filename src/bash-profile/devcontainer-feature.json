@@ -1,0 +1,25 @@
+{
+    "name": "Bash profile",
+    "id": "bash-profile",
+    "version": "1.0.0",
+    "description": "A feature to add a command to a bash profile",
+    "options": {
+        "command": {
+            "type": "string",
+            "proposals": [
+                "alias k=kubectl"
+            ],
+            "default": "",
+            "description": "Command to be added as a line to the $FILE variable"
+        },
+        "file": {
+            "type": "string",
+            "proposals": [
+                "/etc/bash.bashrc",
+                "$_CONTAINER_USER_HOME/.bashrc"
+            ],
+            "default": "$_CONTAINER_USER_HOME/.bashrc",
+            "description": "The file the $COMMAND will be added to"
+        }
+    }
+}

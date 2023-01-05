@@ -1,0 +1,11 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "name": "Dev container feature test",
+    "runArgs": [
+        "--name",
+        "dev-container-feature-test"
+    ],
+    "features": {
+        "./src/bash-profile": {}
+    },
+}

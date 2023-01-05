@@ -1,5 +1,6 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
+    "name": "dev-container-features",
+    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-18",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -8,10 +9,7 @@
         }
     },
     "features": {
-        "./bash-profile": {
-            "command": "echo 'moo'"
-        }
+        "ghcr.io/devcontainers/features/docker-in-docker:1": {}
     },
-    "remoteUser": "node",
     "postCreateCommand": "npm install -g @devcontainers/cli"
 }

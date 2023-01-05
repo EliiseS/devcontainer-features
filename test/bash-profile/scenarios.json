@@ -1,0 +1,19 @@
+{
+    "set_env_in_user_bash_profile": {
+        "image": "debian:bullseye",
+        "features": {
+            "bash-profile": {
+                "command": "HELLO='USER_PROFILE'; export HELLO"
+            }
+        }
+    },
+    "set_env_in_root_bash_profile": {
+        "image": "debian:bullseye",
+        "features": {
+            "bash-profile": {
+                "command": "HELLO='ROOT_PROFILE'; export HELLO",
+                "file": "/etc/bash.bashrc"
+            }
+        }
+    }
+}
