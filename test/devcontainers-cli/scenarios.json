@@ -1,0 +1,19 @@
+{
+    "debian_latest_with_version_set": {
+        "image": "debian:latest",
+        "features": {
+            "devcontainers-cli": {
+                "version": "0.27.1"
+            }
+        }
+    },
+    "ubuntu_with_node": {
+        "image": "ubuntu:latest",
+        "features": {
+            "ghcr.io/devcontainers/features/node": {
+                "version": "16"
+            },
+            "devcontainers-cli": {}
+        }
+    }
+}

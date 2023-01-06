@@ -1,0 +1,22 @@
+{
+    "name": "Dev Container CLI (via npm)",
+    "id": "devcontainers-cli",
+    "version": "1.0.0",
+    "description": "Dev Container CLI, which can take a devcontainer.json and create and configure a dev container from it. https://www.npmjs.com/package/@devcontainers/cli. https://github.com/devcontainers/cli",
+    "documentationURL": "https://github.com/devcontainers/cli",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "0.27.1",
+                "0.27.0"
+            ],
+            "default": "latest",
+            "description": "Select the version of Dev Container CLI to install."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/node"
+    ]
+}
