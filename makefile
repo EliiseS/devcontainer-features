@@ -14,5 +14,5 @@ kill:
 	docker rm -f -v $$(docker ps -aq)
 	docker rmi -f  $$(docker images -q)
 
-test:
+tests:
 	devcontainer features test --features bash-profile  -i mcr.microsoft.com/devcontainers/base:debian .
