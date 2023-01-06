@@ -23,7 +23,6 @@ jobs:
   test:
     needs: [find-features]
     runs-on: ubuntu-latest
-    continue-on-error: true
     strategy:
       matrix:
         features: ${{ fromJson(needs.find-features.outputs.folders )}}
@@ -39,7 +38,6 @@ jobs:
 
   test-global:
     runs-on: ubuntu-latest
-    continue-on-error: true
     steps:
       - uses: actions/checkout@v3
 
