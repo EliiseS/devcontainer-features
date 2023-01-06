@@ -1,0 +1,13 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "name": "Dev container feature test",
+    "runArgs": [
+        "--name",
+        "dev-container-feature-test"
+    ],
+    "features": {
+        "./src/devcontainers-cli": {
+            "version": "0.27.1"
+        }
+    }
+}
