@@ -5,14 +5,7 @@ on:
       - main
   pull_request:
   workflow_dispatch:
-
-name: "CI - Test Features"
-on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-      
+  
 jobs:
 
   find-features:
