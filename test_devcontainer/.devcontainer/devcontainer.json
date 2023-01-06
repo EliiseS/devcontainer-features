@@ -6,6 +6,8 @@
         "dev-container-feature-test"
     ],
     "features": {
-        "./src/bash-profile": {}
+        "./src/bash-profile": {
+            "command": "alias e=echo"
+        }
     },
 }
