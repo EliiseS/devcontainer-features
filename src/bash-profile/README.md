@@ -1,5 +1,4 @@
 
-
 # Bash profile (bash-profile)
 
 A feature to add a command to a bash profile
