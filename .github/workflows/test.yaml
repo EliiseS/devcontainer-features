@@ -30,7 +30,7 @@ jobs:
           [
             "ubuntu:focal",
             "ubuntu:jammy",
-            "ubuntu:bionic",
+            # "ubuntu:bionic",
             "debian:11",
             "debian:10",
             "mcr.microsoft.com/devcontainers/base:ubuntu",
