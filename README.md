@@ -13,7 +13,16 @@ To provide feedback or report issues, please create an issue [on this repo](http
 This repository contains a _collection_ of features. [View the full list of features](src/). Each folder contains a `readme.md` with a description and usage of the feature.
 
 
-⚠️ Officially only  support [debian](https://hub.docker.com/_/debian) and [ubuntu](https://hub.docker.com/_/ubuntu) based images as of now.
+⚠️ Officially only support [debian](https://hub.docker.com/_/debian) and [ubuntu](https://hub.docker.com/_/ubuntu) based images as of now:
+
+```txt
+            "ubuntu:focal",
+            "ubuntu:jammy",
+            "debian:11",
+            "debian:10",
+            "mcr.microsoft.com/devcontainers/base:ubuntu",
+            "mcr.microsoft.com/devcontainers/base:debian",
+```
 
 ### Example
 

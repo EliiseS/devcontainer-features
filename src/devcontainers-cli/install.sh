@@ -3,6 +3,7 @@ set -e
 
 # npm version for Dev Container CLI
 DEVCONTAINERS_CLI_VERSION=${VERSION:-"latest"}
+NODE_VERSION=${NODEVERSION:-"latest"}
 
 # Clean up
 rm -rf /var/lib/apt/lists/*
@@ -30,7 +31,7 @@ install_via_npm() {
     if ! type npm >/dev/null 2>&1; then
         echo "Installing node and npm..."
         check_packages curl ca-certificates
-        VERSION=lts
+        export VERSION=$NODE_VERSION
         curl -fsSL https://raw.githubusercontent.com/devcontainers/features/main/src/node/install.sh | $SHELL
         export NVM_DIR=/usr/local/share/nvm
         [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"

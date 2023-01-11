@@ -30,7 +30,7 @@ jobs:
           [
             "ubuntu:focal",
             "ubuntu:jammy",
-            # "ubuntu:bionic",
+            # "ubuntu:bionic", # Issues installing Node 18
             "debian:11",
             "debian:10",
             "mcr.microsoft.com/devcontainers/base:ubuntu",
