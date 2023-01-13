@@ -1,18 +1,33 @@
 {
-    "set_env_in_user_bash_profile": {
-        "image": "debian:bullseye",
-        "features": {
-            "bash-profile": {
-                "command": "HELLO='USER_PROFILE'; export HELLO"
-            }
-        }
-    },
     "set_env_in_root_bash_profile": {
         "image": "debian:bullseye",
         "features": {
             "bash-profile": {
                 "command": "HELLO='ROOT_PROFILE'; export HELLO",
                 "file": "/etc/bash.bashrc"
+            }
+        }
+    },
+    "create_user_and_set_env_in_user_bash_profile": {
+        "image": "debian:bullseye",
+        "features": {
+            "ghcr.io/devcontainers/features/common-utils": {
+                "username": "vscode",
+                "uid": "1000",
+                "gid": "1000"
+            },
+            "bash-profile": {
+                "command": "HELLO='VSCODE_USER_PROFILE'; export HELLO",
+                "file": "$_REMOTE_USER_HOME/.bashrc"
+            }
+        }
+    },
+    "set_env_in_user_bash_profile": {
+        "image": "debian:bullseye",
+        "features": {
+            "bash-profile": {
+                "command": "HELLO='USER_PROFILE'; export HELLO",
+                "file": "$_CONTAINER_USER_HOME/.bashrc"
             }
         }
     }

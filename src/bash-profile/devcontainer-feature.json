@@ -1,7 +1,7 @@
 {
     "name": "Bash profile",
     "id": "bash-profile",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A feature to add a command to a bash profile",
     "options": {
         "command": {
@@ -16,10 +16,14 @@
             "type": "string",
             "proposals": [
                 "/etc/bash.bashrc",
-                "$_CONTAINER_USER_HOME/.bashrc"
+                "$_CONTAINER_USER_HOME/.bashrc",
+                "$_REMOTE_USER_HOME/.bashrc"
             ],
-            "default": "$_CONTAINER_USER_HOME/.bashrc",
+            "default": "/etc/bash.bashrc",
             "description": "The file the $COMMAND will be added to"
         }
-    }
+    },
+    "installsAfter": [
+        "common"
+    ]
 }
