@@ -7,7 +7,7 @@ source dev-container-features-test-lib
 
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
-check "check empty line is added to .bashrc when command is not set" [ "$(tail -1 /root/.bashrc |  tr -d ' \n\r\t ' | wc -c)" -eq 0 ]
+check "check empty line is added to .bashrc when command is not set" [ "$(tail -1 /etc/bash.bashrc |  tr -d ' \n\r\t ' | wc -c)" -eq 0 ]
 
 
 # Report result
