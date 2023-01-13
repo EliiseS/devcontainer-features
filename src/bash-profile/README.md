@@ -16,7 +16,7 @@ A feature to add a command to a bash profile
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | command | Command to be added as a line to the $FILE variable | string | - |
-| file | The file the $COMMAND will be added to | string | $_CONTAINER_USER_HOME/.bashrc |
+| file | The file the $COMMAND will be added to | string | /etc/bash.bashrc |
 
 
 
